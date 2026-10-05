@@ -1,0 +1,39 @@
+理論:(紅綠燈舉例)
+
+if (燈號 == 紅燈)：條件成立，執行「停車」。
+
+else if (燈號 == 黃燈)：如果不是紅燈但剛好是黃燈，執行「減速慢行」。
+
+else：如果上面都不是（代表是綠燈），執行「順暢通行」。
+
+1. 基本語法結構
+
+if (條件式) {
+    // 當條件成立（為 true）時，就會執行這裡的大括號程式碼
+}
+
+2. 加上「否則」（else）
+如果條件不成立時，你想讓程式做別的事情，就可以搭配 else：
+
+int score = 80;
+
+if (score >= 60) {
+    System.out.println("恭喜及格！");
+} else {
+    System.out.println("需要再加油喔！");
+}
+
+3. 多重條件判斷（else if）
+如果要判斷三種以上的狀況（例如成績分級），可以串接多個條件：
+
+Java
+int score = 85;
+
+if (score >= 90) {
+    System.out.println("甲等");
+} else if (score >= 70) {
+    System.out.println("乙等");
+} else {
+    System.out.println("丙等");
+}
+
