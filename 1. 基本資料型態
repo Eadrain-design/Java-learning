@@ -1,0 +1,31 @@
+整數型態 (Integers)：
+
+int：最常用的整數型態（例如：int i = 0;）。
+
+byte、short、long：根據儲存數值的大小範圍而有所不同（如 long 常於大型數字）。
+
+浮點數型態 (Floating-point)：
+
+double：預設的雙精確度小數型態。
+
+float：單精確度小數型態。
+
+字元型態 (Character)：
+
+char：用來儲存單一字元（使用單引號，例如 'A'）。
+
+布林型態 (Boolean)：
+
+boolean：僅有兩種邏輯狀態，即 true（真）或 false（假），常運用於迴圈（如 for、while）與條件判斷（if）。
+
+字串 (String)：
+
+String：用來儲存文字字串（使用雙引號，例如 "Hello World"）。在真實世界的專案案例中非常常用。
+
+陣列 (Arrays)：
+
+例如畫面中的巢狀迴圈常搭配的一維或多維陣列（如 int[] 或 int[][]），用來管理一整批相同型態的資料。
+
+自訂類別與物件 (Classes & Objects)：
+
+Java 作為強烈物件導向的程式語言，各種由 class 所建立出來的自訂物件也屬於參考資料型態。
