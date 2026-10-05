@@ -1,0 +1,18 @@
+Ex:
+
+// 產生隨機數字
+import java.util.Random; 
+
+void main(){
+    Random random = new Random(); 
+    int x = random.nextInt(bound: 3); 
+    System.out.println(x);
+}
+
+*import java.util.Random;：因為 Random 不是 Java 預設就會自動載入的基本功能，所以必須先把它這個「工具箱」引入才能使用。
+
+*Random random = new Random();：在記憶體中建立一個專門負責產生隨機數的物件，我們叫它 random。
+
+*int x = random.nextInt(bound: 3);：呼叫隨機機器的 nextInt() 方法。括號裡的 bound: 3（上限）代表範圍是 0 到 2（總共 3 個數字，包含 0、不包含 3）。
+
+*System.out.println(x);：如畫面下方終端機所示，把隨機抽出來的數字（例如印出 0）印在畫面上。
