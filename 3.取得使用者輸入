@@ -1,0 +1,32 @@
+1. 引入 Scanner 工具箱
+因為「取得使用者輸入」不是 Java 預設最基礎的功能，所以我們必須先在程式碼的最上方把工具箱「載入」進來：
+
+import java.util.Scanner; // 引入 Scanner 工具
+
+
+2. 建立 Scanner 物件
+在程式執行時，我們要先準備好一個能夠接收輸入的掃描器物件（通常命名為 scanner 或 sc）：
+
+Scanner scanner = new Scanner(System.in); 
+// System.in 代表監聽使用者的鍵盤輸入
+
+
+3. 根據不同的資料型態接收輸入
+當使用者在鍵盤打字並按下 Enter 後，我們就可以用對應的方法把資料接過來存進變數裡：
+
+*接收整數 (int)：
+
+**int** userAge = scanner.nextInt(); 
+
+*接收小數 (double)：
+
+**double** userPrice = scanner.nextDouble();
+
+*接收文字字串 (String)：
+
+**String** userName = scanner.next(); // 接收一個單字（遇到空白會停止）
+// 或者用 scanner.nextLine(); 來接收完整的一行文字
+
+*關閉:
+
+scanner.close();
